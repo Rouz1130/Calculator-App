@@ -1,11 +1,53 @@
-var add = function(number1 , number2) {
-  return number1 + number2;
-};
-// built in prompt function takes string as argument , returns string for user input.
-// prompt collects info unlike alert.
-var number1 = parseInt(prompt("Enter a Number"));
-// need to add parseInt or else we would get two strings returned concated with one another.
-var number2 = parseInt(prompt("Enter another Number"));
-var result = add(number1, number2);
+  var add = function(number1 , number2) {
+    return number1 + number2;
+  };
 
-alert(result);
+  var subtract = function(number1, number2) {
+    return number1 - number2;
+  };
+
+  var multiply = function(number1, number2) {
+    return number1 * number2;
+  };
+
+  var divide = function(number1, number2) {
+    return number1 /   number2;
+  };
+
+
+  // jquery
+
+  $(document).ready(function) {
+    $("#adding").click(function(event) {
+      var number1 = parseInt($('#add1').val());
+      var number2 = parseInt($('#add2').val());
+      var result = add(number1, number2);
+      $('#result').text(result);
+      event.preventDefault();
+    });
+
+  $("#subtract").click(function) {
+    var number1 = parseInt($('#add1').val());
+    var number2 = parseInt($('#add2').val());
+    var result = subtract(number1, number2);
+    $('#result').text(result);
+    event.preventDefault();
+  });
+
+  $("#multiply").click(function) {
+    var number1 = parsInt($('#add1').val());
+    var number2 = parsInt($("#add2").val());
+    var result = multiply(number1, number2);
+    $("#result").text(result);
+    event.preventDefault();
+  });
+
+  $("#divide").click(function) {
+    var number1 = parsInt($('#add1').val());
+    var number2 = parseInt($('#add2').val());
+    var result = divide(number1, number2);
+    $("#result").text(result);
+    event.preventDefault();
+  });
+  
+});
