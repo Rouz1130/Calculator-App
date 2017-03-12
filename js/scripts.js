@@ -17,7 +17,7 @@
 
   // jquery
 
-  $(document).ready(function) {
+  $(document).ready(function() {
     $("#adding").click(function(event) {
       var number1 = parseInt($('#add1').val());
       var number2 = parseInt($('#add2').val());
@@ -26,7 +26,7 @@
       event.preventDefault();
     });
 
-  $("#subtract").click(function) {
+  $("#subtract").click(function(event) {
     var number1 = parseInt($('#add1').val());
     var number2 = parseInt($('#add2').val());
     var result = subtract(number1, number2);
@@ -34,7 +34,7 @@
     event.preventDefault();
   });
 
-  $("#multiply").click(function) {
+  $("#multiply").click(function(event) {
     var number1 = parsInt($('#add1').val());
     var number2 = parsInt($("#add2").val());
     var result = multiply(number1, number2);
@@ -42,12 +42,12 @@
     event.preventDefault();
   });
 
-  $("#divide").click(function) {
+  $("#divide").click(function(event) {
     var number1 = parsInt($('#add1').val());
     var number2 = parseInt($('#add2').val());
     var result = divide(number1, number2);
     $("#result").text(result);
     event.preventDefault();
   });
-  
+
 });
