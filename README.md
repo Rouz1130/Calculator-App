@@ -8,10 +8,7 @@
 
 ## Setup/Installation Requirements
 
-* _clone down repo_
-* _in mono/terminal git clone_
-* _cd into file_
-* _ii index.html to load project_
+* _https://rouz1130.github.io/Calculator-App/_
 
 
 
